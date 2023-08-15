@@ -1,0 +1,77 @@
+composer.phar
+composer.lock
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/public/storage/tmp/*
+/public/storage/media/*
+!/public/storage/media/.gitignore
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+.php-cs-fixer.cache
+phpcs.xml
+.phpcs-cache
+.php_cs.
+/tests/cache
+var
+###< phpunit/phpunit ###
+
+###> error log files ###
+error_log
+error.error_log
+yarn-error.log
+###< error log files ###
+
+###> IDE files ###
+.history/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.phpintel/
+sftp-config.json
+###< IDE files ###
+
+###> ignore compressed files ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.swf
+*.db
+###< ignore compressed files ###
+
+###> ignore compiled files ###
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+###< ignore compiled files ###
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+.yarn/*
+!.yarn/cache
+!.yarn/cache/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
