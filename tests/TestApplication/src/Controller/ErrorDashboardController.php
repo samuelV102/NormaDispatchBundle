@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\Controller;
+namespace NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\Controller;
 
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;

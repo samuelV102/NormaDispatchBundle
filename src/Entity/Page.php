@@ -1,8 +1,8 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Entity;
+namespace NormaUy\Bundle\NormaDispatchBundle\Entity;
 
-use NormaUy\Bundle\TemplateSymfonyBundle\Repository\PageRepository;
+use NormaUy\Bundle\NormaDispatchBundle\Repository\PageRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

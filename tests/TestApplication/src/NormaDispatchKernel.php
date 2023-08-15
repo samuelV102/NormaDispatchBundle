@@ -1,11 +1,11 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication;
+namespace NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication;
 
 use Doctrine\Bundle\DoctrineBundle\DoctrineBundle;
 use Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle;
 use EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle;
-use NormaUy\Bundle\TemplateSymfonyBundle\TemplateSymfonyBundle;
+use NormaUy\Bundle\NormaDispatchBundle\NormaDispatchBundle;
 use Symfony\Bundle\DebugBundle\DebugBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Kernel as SymfonyKernel;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
-final class TemplateKernel extends SymfonyKernel
+final class NormaDispatchKernel extends SymfonyKernel
 {
     use MicroKernelTrait;
 
@@ -35,14 +35,14 @@ final class TemplateKernel extends SymfonyKernel
             new SecurityBundle(),
             new DebugBundle(),
             new EasyAdminBundle(),
-            new TemplateSymfonyBundle(),
+            new NormaDispatchBundle(),
         ];
     }
 
     public function getCacheDir(): string
     {
         return sys_get_temp_dir() .
-            '/com.github.norma-uy.TemplateSymfonyBundle/tests/var/' .
+            '/com.github.norma-uy.NormaDispatchBundle/tests/var/' .
             $this->environment .
             '/cache';
     }
@@ -50,7 +50,7 @@ final class TemplateKernel extends SymfonyKernel
     public function getLogDir(): string
     {
         return sys_get_temp_dir() .
-            '/com.github.norma-uy.TemplateSymfonyBundle/tests/var/' .
+            '/com.github.norma-uy.NormaDispatchBundle/tests/var/' .
             $this->environment .
             '/log';
     }

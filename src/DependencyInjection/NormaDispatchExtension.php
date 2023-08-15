@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\DependencyInjection;
+namespace NormaUy\Bundle\NormaDispatchBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -10,11 +10,11 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 /**
  * @author Samuel Alvarez <samale456uruguay@gmail.com>
  */
-class TemplateExtension extends Extension
+class NormaDispatchExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
-        $configuration = new TemplateConfiguration();
+        $configuration = new NormaDispatchConfiguration();
         $config = $this->processConfiguration($configuration, $configs);
 
         $container->setParameter($this->getAlias() . '.example.enable', $config['example']['enable']);
@@ -26,6 +26,6 @@ class TemplateExtension extends Extension
 
     public function getAlias(): string
     {
-        return 'template_bundle';
+        return 'norma_dispatch_bundle';
     }
 }

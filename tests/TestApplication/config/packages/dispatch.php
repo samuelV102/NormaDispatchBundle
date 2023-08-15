@@ -1,6 +1,6 @@
 <?php
 
-$container->loadFromExtension('template_bundle', [
+$container->loadFromExtension('norma_dispatch_bundle', [
     'example' => [
         'enable' => true,
     ],

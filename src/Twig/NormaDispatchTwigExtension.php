@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Twig;
+namespace NormaUy\Bundle\NormaDispatchBundle\Twig;
 
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Twig\Environment;
@@ -11,7 +11,7 @@ use Twig\TwigFunction;
 /**
  * @author Samuel Alvarez <samale456uruguay@gmail.com>
  */
-class TemplateTwigExtension extends AbstractExtension
+class NormaDispatchTwigExtension extends AbstractExtension
 {
     public function __construct(private ParameterBagInterface $params)
     {

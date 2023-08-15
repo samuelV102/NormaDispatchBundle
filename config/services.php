@@ -2,8 +2,8 @@
 
 namespace Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use NormaUy\Bundle\TemplateSymfonyBundle\Service\Utils;
-use NormaUy\Bundle\TemplateSymfonyBundle\Twig\TemplateTwigExtension;
+use NormaUy\Bundle\NormaDispatchBundle\Service\Utils;
+use NormaUy\Bundle\NormaDispatchBundle\Twig\NormaDispatchTwigExtension;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 return static function (ContainerConfigurator $container) {
@@ -14,7 +14,7 @@ return static function (ContainerConfigurator $container) {
         ->set(Utils::class)->public()
 
         //Twing extensions
-        ->set(TemplateTwigExtension::class)
+        ->set(NormaDispatchTwigExtension::class)
         ->arg(0, service(ParameterBagInterface::class))
         ->tag('twig.extension');
 };

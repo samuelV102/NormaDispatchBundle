@@ -1,3 +1,3 @@
-# TemplateSymfonyBundle
+# NormaDispatchBundle
 
-Base template for building Symfony bundles
+Sending notifications to address lists

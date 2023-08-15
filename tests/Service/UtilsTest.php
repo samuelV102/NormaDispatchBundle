@@ -1,9 +1,9 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Tests\Service;
+namespace NormaUy\Bundle\NormaDispatchBundle\Tests\Service;
 
-use NormaUy\Bundle\TemplateSymfonyBundle\Service\Utils;
-use NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\TemplateKernel;
+use NormaUy\Bundle\NormaDispatchBundle\Service\Utils;
+use NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\NormaDispatchKernel;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -21,7 +21,7 @@ class UtilsTest extends TestCase
 
     public function testServiceWiring()
     {
-        $kernel = new TemplateKernel();
+        $kernel = new NormaDispatchKernel();
         $kernel->boot();
         $container = $kernel->getContainer();
         $utils = $container->get(Utils::class);

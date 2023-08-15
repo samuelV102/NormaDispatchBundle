@@ -15,7 +15,7 @@ $container->loadFromExtension('doctrine', [
                 'is_bundle' => false,
                 'type' => 'attribute',
                 'dir' => '%kernel.project_dir%/src/Entity',
-                'prefix' => 'NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\Entity',
+                'prefix' => 'NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\Entity',
                 'alias' => 'app',
             ],
         ],

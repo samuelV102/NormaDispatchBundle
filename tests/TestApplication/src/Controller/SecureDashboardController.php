@@ -1,12 +1,12 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\Controller;
+namespace NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\Controller;
 
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
-use NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\Entity\BlogPost;
-use NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\Entity\Category;
+use NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\Entity\BlogPost;
+use NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\Entity\Category;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 

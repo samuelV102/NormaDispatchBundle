@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Service;
+namespace NormaUy\Bundle\NormaDispatchBundle\Service;
 
 /**
  * @author Samuel Alvarez <samale456uruguay@gmail.com>

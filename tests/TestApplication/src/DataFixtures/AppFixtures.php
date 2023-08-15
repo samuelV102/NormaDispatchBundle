@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Tests\TestApplication\DataFixtures;
+namespace NormaUy\Bundle\NormaDispatchBundle\Tests\TestApplication\DataFixtures;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;

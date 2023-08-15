@@ -1,8 +1,8 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Repository;
+namespace NormaUy\Bundle\NormaDispatchBundle\Repository;
 
-use NormaUy\Bundle\TemplateSymfonyBundle\Entity\Page;
+use NormaUy\Bundle\NormaDispatchBundle\Entity\Page;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

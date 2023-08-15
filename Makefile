@@ -6,7 +6,7 @@ else
     detected_OS := $(shell uname)  # same as "uname -s"
 endif
 
-var_test_path:=$(shell php -r "echo sys_get_temp_dir();")/com.github.norma-uy.templatesymfonybundle/tests/var/test
+var_test_path:=$(shell php -r "echo sys_get_temp_dir();")/com.github.norma-uy.normadispatchbundle/tests/var/test
 
 ## —— Help ————————————————————————————————————
 help: ## Show help

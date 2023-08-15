@@ -1,8 +1,8 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle;
+namespace NormaUy\Bundle\NormaDispatchBundle;
 
-use NormaUy\Bundle\TemplateSymfonyBundle\DependencyInjection\TemplateExtension;
+use NormaUy\Bundle\NormaDispatchBundle\DependencyInjection\NormaDispatchExtension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
@@ -10,7 +10,7 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 /**
  * @author Samuel Alvarez <samale456uruguay@gmail.com>
  */
-class TemplateSymfonyBundle extends AbstractBundle
+class NormaDispatchBundle extends AbstractBundle
 {
     public const VERSION = '0.1';
 
@@ -21,7 +21,7 @@ class TemplateSymfonyBundle extends AbstractBundle
     public function getContainerExtension(): ?ExtensionInterface
     {
         if (null === $this->extension) {
-            $this->extension = new TemplateExtension();
+            $this->extension = new NormaDispatchExtension();
         }
         return $this->extension;
     }

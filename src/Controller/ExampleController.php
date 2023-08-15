@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\Controller;
+namespace NormaUy\Bundle\NormaDispatchBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 

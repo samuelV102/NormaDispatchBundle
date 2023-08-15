@@ -1,6 +1,6 @@
 <?php
 
-namespace NormaUy\Bundle\TemplateSymfonyBundle\DependencyInjection;
+namespace NormaUy\Bundle\NormaDispatchBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\BooleanNodeDefinition;
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
@@ -10,11 +10,11 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 /**
  * @author Samuel Alvarez <samale456uruguay@gmail.com>
  */
-class TemplateConfiguration implements ConfigurationInterface
+class NormaDispatchConfiguration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('template_bundle');
+        $treeBuilder = new TreeBuilder('norma_dispatch_bundle');
 
         $rootNode = $treeBuilder->getRootNode();
 

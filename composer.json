@@ -1,14 +1,14 @@
 {
-    "name": "norma-uy/template-symfony-bundle",
+    "name": "norma-uy/norma-dispatch-bundle",
     "type": "symfony-bundle",
-    "description": "Base template for building Symfony bundles",
+    "description": "Sending notifications to address lists",
     "keywords": [],
-    "homepage": "https://github.com/norma-uy/TemplateSymfonyBundleBundle",
+    "homepage": "https://github.com/norma-uy/NormaDispatchBundleBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Project Contributors",
-            "homepage": "https://github.com/norma-uy/TemplateSymfonyBundle/graphs/contributors"
+            "homepage": "https://github.com/norma-uy/NormaDispatchBundle/graphs/contributors"
         }
     ],
     "require": {
@@ -65,13 +65,13 @@
     },
     "autoload": {
         "psr-4": {
-            "NormaUy\\Bundle\\TemplateSymfonyBundle\\": "src/"
+            "NormaUy\\Bundle\\NormaDispatchBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "NormaUy\\Bundle\\TemplateSymfonyBundle\\Tests\\": "tests/",
-            "NormaUy\\Bundle\\TemplateSymfonyBundle\\Tests\\TestApplication\\": "tests/TestApplication/src/"
+            "NormaUy\\Bundle\\NormaDispatchBundle\\Tests\\": "tests/",
+            "NormaUy\\Bundle\\NormaDispatchBundle\\Tests\\TestApplication\\": "tests/TestApplication/src/"
         }
     }
 }
