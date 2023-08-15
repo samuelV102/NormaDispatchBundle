@@ -2,26 +2,26 @@
 
 namespace NormaUy\Bundle\NormaDispatchBundle\Repository;
 
-use NormaUy\Bundle\NormaDispatchBundle\Entity\Page;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
+use NormaUy\Bundle\NormaDispatchBundle\Entity\Subscriber;
 
 /**
- * @extends ServiceEntityRepository<Page>
+ * @extends ServiceEntityRepository<Subscriber>
  *
- * @method Page|null find($id, $lockMode = null, $lockVersion = null)
- * @method Page|null findOneBy(array $criteria, array $orderBy = null)
- * @method Page[]    findAll()
- * @method Page[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Subscriber|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Subscriber|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Subscriber[]    findAll()
+ * @method Subscriber[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class PageRepository extends ServiceEntityRepository
+class SubscriberRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Page::class);
+        parent::__construct($registry, Subscriber::class);
     }
 
-    public function save(Page $entity, bool $flush = false): void
+    public function save(Subscriber $entity, bool $flush = false): void
     {
         $this->getEntityManager()->persist($entity);
 
@@ -30,7 +30,7 @@ class PageRepository extends ServiceEntityRepository
         }
     }
 
-    public function remove(Page $entity, bool $flush = false): void
+    public function remove(Subscriber $entity, bool $flush = false): void
     {
         $this->getEntityManager()->remove($entity);
 
@@ -40,7 +40,7 @@ class PageRepository extends ServiceEntityRepository
     }
 
     //    /**
-    //     * @return Page[] Returns an array of Page objects
+    //     * @return Subscriber[] Returns an array of Subscriber objects
     //     */
     //    public function findByExampleField($value): array
     //    {
@@ -53,12 +53,4 @@ class PageRepository extends ServiceEntityRepository
     //            ->getResult()
     //        ;
     //    }
-
-    public function findOneBySlugs(array $slugs): ?Page
-    {
-        $qb = $this->createQueryBuilder('m');
-        $qb->andWhere($qb->expr()->in('m.slug', ':slugs'))->setParameter('slugs', $slugs);
-
-        return $qb->getQuery()->getOneOrNullResult();
-    }
 }
